@@ -59,12 +59,12 @@ def main():
 
 
 def test_example():
-    options = {'simulate': True, 'driver_setup': {'Model': '5164', 'BoardType': 'PXIe', }, }
+    options = {'simulate': True, 'driver_setup': {'Model': '5122', 'BoardType': 'PXIe', }, }
     example('PXI1Slot2', options, 10, 1.0, 1000.0, 100)
 
 
 def test_main():
-    cmd_line = ['--option-string', 'Simulate=1, DriverSetup=Model:5164; BoardType:PXIe', ]
+    cmd_line = ['--option-string', 'Simulate=1, DriverSetup=Model:5122; BoardType:PXIe', ]
     _main(cmd_line)
 
 
