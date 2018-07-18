@@ -293,7 +293,8 @@ def test_filter_coefficients():
 
 
 def test_send_software_trigger_edge(session):
-    session.send_software_trigger_edge(niscope.WhichTrigger.ARM_REFERENCE)
+    with session.initiate():
+        session.send_software_trigger_edge(niscope.WhichTrigger.ARM_REFERENCE)
 
 
 def test_disable(session):
